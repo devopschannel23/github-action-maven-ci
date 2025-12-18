@@ -39,7 +39,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: building jar file
+      - name: building jar artifacts file
         run: mvn clean package
       - name: upload artifacts
         uses: actions/upload-artifact@v6
