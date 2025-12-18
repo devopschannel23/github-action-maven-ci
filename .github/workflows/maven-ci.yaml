@@ -33,7 +33,7 @@ jobs:
       - name: building jar file
         run: mvn clean package
       - name: upload artifacts
-        uses: actions/upload-artifact
+        uses: actions/upload-artifact@v6
         with:
           name: artifact-data
           path: 'target/*.jar'
