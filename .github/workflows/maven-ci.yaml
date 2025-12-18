@@ -32,3 +32,8 @@ jobs:
           java-version: '17'
       - name: building jar file
         run: mvn clean package
+      - name: upload artifacts
+        uses: actions/upload-artifact
+        with:
+          name: artifact-data
+          path: 'target/*.jar'
